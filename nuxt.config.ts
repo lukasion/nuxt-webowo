@@ -11,18 +11,13 @@ export default defineNuxtConfig({
     build: {
         transpile: [],
     },
-    experimental: {
-        reactivityTransform: true
-    },
-    plugins: [
-
-    ],
     css: [
         '~/assets/sass/app.scss'
     ],
     modules: [
         '@vueuse/motion/nuxt',
         '@pinia/nuxt',
+        '@element-plus/nuxt'
     ],
     pinia: {
         autoImports: [
@@ -39,10 +34,8 @@ export default defineNuxtConfig({
             autoprefixer: {},
         },
     },
-    server: {
-        host: '0.0.0.0'
-    },
     imports: {
         dirs: ['store'],
     },
+    elementPlus: { /** Options */ }
 })

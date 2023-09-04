@@ -3,7 +3,5 @@
 </script>
 
 <template>
-    <div>
-        content
-    </div>
+    <UserForm />
 </template>
